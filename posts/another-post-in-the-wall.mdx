@@ -1,11 +1,49 @@
 ---
-title: How to create SVG-ready icon symbols in Sketch PART 1
-description: "Consider that for a moment: everything we see around us is assumed to have had a cause and is contingent upon."
+title: Why are most Games coded in C++ and What is the difference with C#?
+description: "Both languages belong to the same family of C language. Here are some of their similarities and differences in the context of game development. Similarities C++ and C# are object-oriented programming languages, having similar underlying code structures. So, understanding one can help you program in the other too. "
 date: May 4 2021
 ---
 
-This is an example post, with a [link](https://nextjs.org) and a React component:
+C++ and C# (pronounced "C sharp") are two distinct programming languages with different purposes, designs, and ecosystems. Here's a comparison of the two:
 
-The title and description are pulled from the MDX file and processed using `gray-matter`. Additionally, links are rendered using a custom component passed to `next-mdx-remote`.
+1. **Origins and Design Goals**:
+   - **C++**: Developed by Bjarne Stroustrup in the early 1980s as an extension of the C programming language, C++ introduces object-oriented programming features. It's designed for system and application development and gives programmers a high degree of control over system resources.
+   - **C#**: Developed by Microsoft in the early 2000s as part of its .NET initiative. It's a high-level, object-oriented language designed for modern application development, especially for the Windows platform.
 
-Go back [home](/).
+2. **Platform Dependency**:
+   - **C++**: Typically compiled to platform-specific machine code, which can make it more performant but also means that you might need different builds for different platforms.
+   - **C#**: Typically compiled to Intermediate Language (IL), which is then just-in-time compiled by the .NET runtime for the specific platform. This makes C# applications somewhat platform-independent as long as there's a .NET runtime available.
+
+3. **Memory Management**:
+   - **C++**: Gives developers explicit control over memory allocation and deallocation. This can lead to more efficient use of memory but also introduces the risk of memory leaks or other memory-related bugs.
+   - **C#**: Uses automatic garbage collection. Developers do not need to manually manage memory in most cases, which can reduce memory-related bugs but might introduce some overhead.
+
+4. **Standard Libraries**:
+   - **C++**: Comes with the Standard Template Library (STL) which provides collections, algorithms, and other utilities.
+   - **C#**: Has the .NET Framework (or .NET Core/.NET 5+ for cross-platform work), offering a vast library of classes for various application needs, from web development to desktop applications.
+
+5. **Development Ecosystem**:
+   - **C++**: Has a wide range of compilers available (like GCC, Clang, and MSVC) and is used in various application domains, from embedded systems to high-performance applications.
+   - **C#**: Primarily developed in Microsoft's Visual Studio environment, C# has a strong emphasis on enterprise applications, web applications (using ASP.NET), and Windows desktop applications.
+
+6. **Interoperability**:
+   - **C++**: Can be used in conjunction with many other languages, especially C.
+   - **C#**: Can interoperate with other .NET languages and can also use Platform Invocation Services (P/Invoke) to call C/C++ functions.
+
+7. **Syntax and Features**:
+   - **C++**: Has a more complex syntax, especially with features like templates, and allows for both high- and low-level programming.
+   - **C#**: Offers a cleaner and more modern syntax, with features like properties, events, and LINQ (Language Integrated Query).
+
+8. **Platform and Framework Support**:
+   - **C++**: Has wide platform support and is commonly used in game development (with engines like Unreal Engine), embedded programming, and system applications.
+   - **C#**: Strongly associated with Windows but has become cross-platform with .NET Core/.NET 5+. It's popular in game development with the Unity game engine.
+
+9. **Performance**:
+   - **C++**: Generally offers better performance due to direct compilation to machine code and finer control over hardware resources.
+   - **C#**: Might have some overhead due to the .NET runtime, but for many applications, the difference in performance is negligible.
+
+10. **Safety and Productivity**:
+   - **C++**: While powerful, it allows for operations that can introduce bugs (like pointer arithmetic). Proper memory management can be challenging.
+   - **C#**: Designed with safety in mind, it reduces many common pitfalls of C++ by disallowing certain risky operations and offering automatic memory management.
+
+Both languages have their strengths and are suited for different types of tasks. The choice between C++ and C# will often depend on the specific requirements of a project, the platform you're targeting, and personal or organizational preferences.
